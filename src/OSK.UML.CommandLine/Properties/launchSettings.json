@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OSK.UML.CommandLine": {
+      "commandName": "Project",
+      "commandLineArgs": "-p \"C:\\Users\\M\\source\\repos\\OSK.UML\\src\\OSK.UML\\Models\" -o \"C:\\Users\\M\\Desktop\\uml\""
+    }
+  }
+}
