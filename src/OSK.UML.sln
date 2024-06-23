@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSK.UML.Framework.UnitTests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSK.UML.UnitTests", "OSK.UML.UnitTests\OSK.UML.UnitTests.csproj", "{FAD15D13-6F30-46D6-82AF-8D2C19AC99CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSK.Parsing.FileTokens", "..\..\OSK.Parsing.FileTokens\src\OSK.Parsing.FileTokens\OSK.Parsing.FileTokens.csproj", "{C1DBBEF1-2259-4DBC-875D-7639908708E8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{FAD15D13-6F30-46D6-82AF-8D2C19AC99CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAD15D13-6F30-46D6-82AF-8D2C19AC99CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAD15D13-6F30-46D6-82AF-8D2C19AC99CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1DBBEF1-2259-4DBC-875D-7639908708E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1DBBEF1-2259-4DBC-875D-7639908708E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1DBBEF1-2259-4DBC-875D-7639908708E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1DBBEF1-2259-4DBC-875D-7639908708E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
