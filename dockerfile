@@ -7,8 +7,8 @@ WORKDIR /app
 COPY src/*.sln ./
 COPY src/OSK.UML.CommandLine/*.csproj ./OSK.UML.CommandLine/
 COPY src/OSK.UML/*.csproj ./OSK.UML/
-COPY src/OSK.UML.Parsing/*.csproj ./OSK.UML.Parsing/
-COPY src/OSK.UML.PlantUML/*.csproj ./OSK.UML.PlantUML/
+COPY src/OSK.UML.Framework/*.csproj ./OSK.UML.Framework/
+COPY src/OSK.UML.Exporters.PlantUML/*.csproj ./OSK.UML.Exporters.PlantUML/
 RUN dotnet restore Experimental.Uml.sln
 
 COPY ./src ./
