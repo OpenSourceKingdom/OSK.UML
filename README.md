@@ -7,5 +7,8 @@ The command line tool currently supports UML generations for C# projects, but sh
 
 Note: When using the PlantUML integration for UML export, the path given should be an absolute path within the file system used or PlanUML will generate the related UML image into a directory that may not be caught by the tool. See https://plantuml.com/command-line for more information.
 
+# Example UML output
+![domainModel](https://github.com/OpenSourceKingdom/OSK.UML/assets/7662822/f35244e1-0380-437e-82a4-75f37765278f)
+
 # Docker supprt
 A docker image has been deployed to https://hub.docker.com/repository/docker/blankdev117/umlgenerator and can be used to generate UML diagrams within a container
