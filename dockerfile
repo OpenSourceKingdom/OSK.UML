@@ -7,11 +7,10 @@ WORKDIR /app
 COPY src/*.sln ./
 COPY src/OSK.UML.CommandLine/*.csproj ./OSK.UML.CommandLine/
 COPY src/OSK.UML/*.csproj ./OSK.UML/
+COPY src/OSK.UML.UnitTests/*.csproj ./OSK.UML.UnitTests/
 COPY src/OSK.UML.Framework/*.csproj ./OSK.UML.Framework/
+COPY src/OSK.UML.Framework.UnitTests/*.csproj ./OSK.UML.Framework.UnitTests/
 COPY src/OSK.UML.Exporters.PlantUML/*.csproj ./OSK.UML.Exporters.PlantUML/
-
-RUN ls
-
 RUN dotnet restore ./OSK.UML.sln
 
 COPY ./src ./
@@ -31,7 +30,7 @@ USER umlgenerator
 COPY --from=build /app/OSK.UML.CommandLine/bin/Release/OSK.UML.CommandLine.*.nupkg ./
 RUN dotnet tool install --global --add-source /app --version ${VERSION} OSK.UML.CommandLine
 
-ENV PATH="/root/.dotnet/tools:${PATH}"
+ENV PATH "/root/.dotnet/tools:${PATH}"
 
 FROM mcr.microsoft.com/dotnet/runtime:8.0
 RUN apt-get update && apt-get install -y \
@@ -43,4 +42,4 @@ COPY --from=mcr.microsoft.com/openjdk/jdk:17-ubuntu $JAVA_HOME $JAVA_HOME
 
 COPY --from=packer /home/umlgenerator/.dotnet/tools /opt/bin
 
-ENV PATH="/opt/bin:${PATH}"
+ENV PATH "/opt/bin:${PATH}"
