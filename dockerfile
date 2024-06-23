@@ -9,7 +9,7 @@ COPY src/OSK.UML.CommandLine/*.csproj ./OSK.UML.CommandLine/
 COPY src/OSK.UML/*.csproj ./OSK.UML/
 COPY src/OSK.UML.Framework/*.csproj ./OSK.UML.Framework/
 COPY src/OSK.UML.Exporters.PlantUML/*.csproj ./OSK.UML.Exporters.PlantUML/
-RUN dotnet restore Experimental.Uml.sln
+RUN dotnet restore OSK.UML.sln
 
 COPY ./src ./
 RUN dotnet pack -c Release -p:VERSION=${VERSION} ./OSK.UML.CommandLine/OSK.UML.CommandLine.csproj
