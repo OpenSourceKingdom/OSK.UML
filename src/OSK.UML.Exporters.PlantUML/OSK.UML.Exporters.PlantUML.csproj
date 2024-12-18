@@ -5,6 +5,7 @@
 		<Description>A .NET library that provides a uml diagram exporter that is based on an integration with PlantUML.</Description>
 		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, uml, diagram, export, plant</PackageTags>
 		<Title>OSK.UML.Exporters.PlantUML</Title>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<PropertyGroup>
