@@ -2,12 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<LangVersion>12</LangVersion>
-		<RepositoryUrl>https://github.com/OpenSourceKingdom/OSK.UML</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
 		<Description>A .NET library that provides logic for parsing files or directories into UML diagrams.</Description>
-		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, file, directory, reader, parse, uml, diagram</PackageTags>
-		<Authors>BlankDev117</Authors>
+		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, file, directory, reader, parse, uml, diagram, project, class, analysis, generator, dependency, tool</PackageTags>
 		<Title>OSK.UML</Title>
 	</PropertyGroup>
 
@@ -16,12 +12,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
-		<PackageReference Include="OSK.Functions.Outputs.Logging.Abstractions" Version="1.4.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+		<PackageReference Include="OSK.Functions.Outputs.Logging.Abstractions" Version="1.5.2" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\OSK.UML.Framework\OSK.UML.Framework.csproj" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<ProjectReference Include="..\OSK.UML.Framework\OSK.UML.Framework.csproj" />
 	</ItemGroup>
 
 </Project>

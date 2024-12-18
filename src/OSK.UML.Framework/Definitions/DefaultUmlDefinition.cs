@@ -37,7 +37,9 @@ namespace OSK.UML.Framework.Definitions
                 modifierKeyWords: [
                     "abstract", "readonly", "required", "static",
                     "record", "override", "sealed", "virtual",
-                    "unsafe", "volatile", "async", "extern" ],
+                    "unsafe", "volatile", "async", "extern",
+                    "required" 
+                ],
                 methodParameterTypeIsFirst: true,
                 umlSyntaxTemplates: [
                     new UmlSyntaxTemplate(SyntaxRuleType.Visibility, SyntaxRuleType.Modifiers,

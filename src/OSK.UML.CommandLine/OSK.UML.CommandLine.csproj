@@ -13,15 +13,16 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.9.1" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
-		<PackageReference Include="OSK.Functions.Outputs.Logging" Version="1.4.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
+		<PackageReference Include="OSK.Functions.Outputs.Logging" Version="1.5.2" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\OSK.UML.Exporters.PlantUML\OSK.UML.Exporters.PlantUML.csproj" />
-	  <ProjectReference Include="..\OSK.UML\OSK.UML.csproj" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<ProjectReference Include="..\OSK.UML.Exporters.PlantUML\OSK.UML.Exporters.PlantUML.csproj" />
+		<ProjectReference Include="..\OSK.UML\OSK.UML.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -49,9 +49,7 @@ namespace OSK.UML.Framework.Definitions
 
         public bool IsNameSpace(string text)
         {
-            return _nameSpaceKeyWord == null
-                ? false
-                : string.Equals(_nameSpaceKeyWord, text, StringComparison.Ordinal);
+            return _nameSpaceKeyWord != null && string.Equals(_nameSpaceKeyWord, text, StringComparison.Ordinal);
         }
 
         public bool IsVisibility(string text)

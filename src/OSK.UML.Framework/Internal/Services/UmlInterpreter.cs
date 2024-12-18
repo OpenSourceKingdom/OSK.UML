@@ -22,7 +22,7 @@ namespace OSK.UML.Framework.Internal.Services
         private List<UmlElementParameter> _parameters = [];
         private UmlConstructType? _constructType;
 
-        private string? _firstParameterText = null;
+        private string _firstParameterText = null;
 
         #endregion
 
@@ -98,7 +98,7 @@ namespace OSK.UML.Framework.Internal.Services
                 ? UmlInterpreterState.Satisfied : UmlInterpreterState.Parsing;
         }
 
-        public UmlElement? GetElement()
+        public UmlElement GetElement()
         {
             if (_interpreterState != UmlInterpreterState.Satisfied)
             {
@@ -197,7 +197,7 @@ namespace OSK.UML.Framework.Internal.Services
             return matchesRule;
         }
 
-        private UmlSyntaxRule? GetSyntaxRule(int index)
+        private UmlSyntaxRule GetSyntaxRule(int index)
             => index >= template.Rules.Length
              ? null : template.Rules[index];
 

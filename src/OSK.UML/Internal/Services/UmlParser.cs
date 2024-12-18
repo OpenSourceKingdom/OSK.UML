@@ -101,12 +101,9 @@ namespace OSK.UML.Internal.Services
                                 _ => (UmlComponent)null
                             };
 
-                            if (component == null)
-                            {
-                                throw new InvalidOperationException($"Unable to interpret a uml component with an unexpected file format.");
-                            }
-
-                            return component;
+                            return component is null
+                                ? throw new InvalidOperationException($"Unable to interpret a uml component with an unexpected file format.")
+                                : component;
                         }
                         break;
                 }
