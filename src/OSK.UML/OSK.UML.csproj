@@ -5,6 +5,7 @@
 		<Description>A .NET library that provides logic for parsing files or directories into UML diagrams.</Description>
 		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, file, directory, reader, parse, uml, diagram, project, class, analysis, generator, dependency, tool</PackageTags>
 		<Title>OSK.UML</Title>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<PropertyGroup>

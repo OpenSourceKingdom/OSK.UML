@@ -20,7 +20,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
 		<ProjectReference Include="..\OSK.UML.Exporters.PlantUML\OSK.UML.Exporters.PlantUML.csproj" />
 		<ProjectReference Include="..\OSK.UML\OSK.UML.csproj" />
 	</ItemGroup>
