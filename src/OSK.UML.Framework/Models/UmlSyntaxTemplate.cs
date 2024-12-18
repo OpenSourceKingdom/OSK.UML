@@ -11,7 +11,7 @@ namespace OSK.UML.Framework.Models
 
         public UmlSyntaxTemplate()
         {
-            Rules = Array.Empty<UmlSyntaxRule>();
+            Rules = [];
         }
 
         public UmlSyntaxTemplate(params UmlSyntaxRule[] syntaxRules)

@@ -2,13 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<Nullable>enable</Nullable>
-		<LangVersion>12</LangVersion>
-		<RepositoryUrl>https://github.com/OpenSourceKingdom/OSK.UML</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
 		<Description>A .NET library that provides a foundational framework for parsing files or directories into UML diagrams.</Description>
-		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, file, directory, reader, parse, uml, diagram, framework</PackageTags>
-		<Authors>BlankDev117</Authors>
+		<PackageTags>OpenSourceKingdom, OpenSource, OSK, parsing, file, directory, reader, parse, uml, diagram, framework, analsis, tool, generator, definition, syntax, template</PackageTags>
 		<Title>OSK.UML.Framework</Title>
 	</PropertyGroup>
 
@@ -17,7 +12,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="OSK.Parsing.FileTokens" Version="0.0.4" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<PackageReference Include="OSK.Parsing.FileTokens" Version="0.1.0" />
 	</ItemGroup>
 
 </Project>
