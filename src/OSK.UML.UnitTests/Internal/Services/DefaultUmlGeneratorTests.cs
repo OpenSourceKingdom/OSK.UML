@@ -1,4 +1,5 @@
 ﻿using Moq;
+using OSK.Functions.Outputs.Abstractions;
 using OSK.Functions.Outputs.Logging.Abstractions;
 using OSK.Functions.Outputs.Mocks;
 using OSK.Parsing.FileTokens.Ports;
@@ -15,11 +16,11 @@ namespace OSK.UML.UnitTests.Internal.Services
     {
         #region Variables
 
-        private string _testDirectory;
+        private readonly string _testDirectory;
 
         private readonly Mock<IUmlParser> _mockParser;
         private readonly IOutputFactory<DefaultUmlGenerator> _outputFactory;
-        private readonly IUmlGenerator _generator;
+        private readonly DefaultUmlGenerator _generator;
 
         #endregion
 
@@ -46,6 +47,7 @@ namespace OSK.UML.UnitTests.Internal.Services
 
         public void Dispose()
         {
+            GC.SuppressFinalize(this);
             if (Directory.Exists(_testDirectory))
             {
                 Directory.Delete(_testDirectory, true);
@@ -87,7 +89,7 @@ namespace OSK.UML.UnitTests.Internal.Services
 
             // Assert
             Assert.False(result.IsSuccessful);
-            Assert.Equal(HttpStatusCode.BadRequest, result.Code.StatusCode);
+            Assert.Equal(OutputSpecificityCode.InvalidParameter, result.StatusCode.SpecificityCode);
         }
 
         [Fact]
@@ -98,7 +100,7 @@ namespace OSK.UML.UnitTests.Internal.Services
 
             // Assert
             Assert.False(result.IsSuccessful);
-            Assert.Equal(HttpStatusCode.NotFound, result.Code.StatusCode);
+            Assert.Equal(OutputSpecificityCode.DataNotFound, result.StatusCode.SpecificityCode);
         }
 
         [Fact]

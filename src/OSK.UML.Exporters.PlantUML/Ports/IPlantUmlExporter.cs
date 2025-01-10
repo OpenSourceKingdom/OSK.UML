@@ -3,7 +3,7 @@ using OSK.UML.Ports;
 
 namespace OSK.UML.Exporters.PlantUML.Ports
 {
-    [HexagonalPort(HexagonalPort.Primary)]
+    [HexagonalIntegration(HexagonalIntegrationType.LibraryProvided)]
     public interface IPlantUmlExporter : IUmlExporter
     {
     }

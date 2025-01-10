@@ -14,7 +14,7 @@
 
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
-		<PackageReference Include="OSK.Parsing.FileTokens" Version="0.1.0" />
+		<PackageReference Include="OSK.Parsing.FileTokens" Version="0.1.1" />
 	</ItemGroup>
 
 </Project>

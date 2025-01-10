@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OSK.UML.Ports
 {
-    [HexagonalPort(HexagonalPort.Primary)]
+    [HexagonalIntegration(HexagonalIntegrationType.LibraryProvided, HexagonalIntegrationType.ConsumerPointOfEntry)]
     public interface IUmlGenerator
     {
         /// <summary>

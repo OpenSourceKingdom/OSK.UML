@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OSK.UML.Ports
 {
-    [HexagonalPort(HexagonalPort.Primary)]
+    [HexagonalIntegration(HexagonalIntegrationType.LibraryProvided)]
     public interface IUmlParser : IDisposable
     {
         Task<IEnumerable<UmlComponent>> ParseUmlAsync(CancellationToken cancellationToken = default);

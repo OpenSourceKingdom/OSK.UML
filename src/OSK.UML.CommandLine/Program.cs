@@ -42,7 +42,7 @@ try
                var provider = GetServiceProvider(verboseLogging: false, jarFilePath: string.Empty);
                var outputFactory = provider.GetRequiredService<IOutputFactory<Program>>();
                var errors = string.Join(",", errs.Select(e => e.Tag));
-               return Task.FromResult(outputFactory.Error(HttpStatusCode.InternalServerError, $"There was an issue parsing the execution command. Errors: {errors}"));
+               return Task.FromResult(outputFactory.Fail($"There was an issue parsing the execution command. Errors: {errors}", OutputSpecificityCode.UnknownError));
            });
     if (!generationResult.IsSuccessful)
     {

@@ -34,7 +34,7 @@ namespace OSK.UML.Exporters.PlantUML.Internal.Services
             var jarCommand = new PlantUmlJarCommand(diagram.Name, umlString, outputPath, logger);
 
             await jarCommand.ExecuteAsync(options.Value.JarFilePath, cancellationToken);
-            return outputFactory.Success();
+            return outputFactory.Succeed();
         }
 
         #endregion
