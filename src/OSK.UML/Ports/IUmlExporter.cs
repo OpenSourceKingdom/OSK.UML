@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OSK.UML.Ports
 {
-    [HexagonalPort(HexagonalPort.Secondary)]
+    [HexagonalIntegration(HexagonalIntegrationType.IntegrationRequired)]
     public interface IUmlExporter
     {
         /// <summary>

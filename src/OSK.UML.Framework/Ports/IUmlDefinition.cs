@@ -7,7 +7,7 @@ namespace OSK.UML.Framework.Ports
     /// <summary>
     /// A Uml definition describes the different attributes a Uml diagram can possess.
     /// </summary>
-    [HexagonalPort(HexagonalPort.Secondary)]
+    [HexagonalIntegration(HexagonalIntegrationType.IntegrationOptional)]
     public interface IUmlDefinition
     {
         /// <summary>

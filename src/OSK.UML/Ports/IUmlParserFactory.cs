@@ -1,7 +1,9 @@
-﻿using OSK.Parsing.FileTokens.Ports;
+﻿using OSK.Hexagonal.MetaData;
+using OSK.Parsing.FileTokens.Ports;
 
 namespace OSK.UML.Ports
 {
+    [HexagonalIntegration(HexagonalIntegrationType.LibraryProvided)]
     public interface IUmlParserFactory
     {
         /// <summary>

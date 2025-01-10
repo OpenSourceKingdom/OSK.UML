@@ -7,7 +7,7 @@ namespace OSK.UML.Framework.Ports
     /// <summary>
     /// Acts as interpreter of file tokens using a <see cref="IUmlDefinition"/>. The interpreter is meant to process file tokens and maintain state information for Uml parsing
     /// </summary>
-    [HexagonalPort(HexagonalPort.Primary)]
+    [HexagonalIntegration(HexagonalIntegrationType.LibraryProvided)]
     public interface IUmlInterpreter
     {
         /// <summary>
